@@ -15,8 +15,16 @@ class _PlacesListScreen extends State<PlacesListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Your Places'),
-        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.add))],
+        title: const Text(
+          'Your Places',
+        ),
+        actions: [
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.add,
+              ))
+        ],
       ),
       body: const PlacesList(places: []),
     );
