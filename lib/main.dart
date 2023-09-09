@@ -1,3 +1,4 @@
+import 'package:favorite_places/features/places_list/places_list_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,8 +7,8 @@ void main() {
 
 final colorScheme = ColorScheme.fromSeed(
   brightness: Brightness.dark,
-  seedColor: const Color.fromARGB(255, 102, 6, 247),
-  background: const Color.fromARGB(255, 56, 49, 66),
+  seedColor: const Color.fromARGB(165, 123, 255, 214),
+  background: const Color.fromARGB(255, 255, 255, 255),
 );
 
 final theme = ThemeData().copyWith(
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: theme,
-      home: const Text('My APP'),
+      home: const PlacesListScreen(),
     );
   }
 }
