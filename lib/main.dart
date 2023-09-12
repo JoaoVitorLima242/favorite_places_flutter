@@ -1,5 +1,4 @@
 import 'package:favorite_places/features/places_list/places_list_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'package:flutter/material.dart';
 
@@ -13,21 +12,10 @@ final colorScheme = ColorScheme.fromSeed(
   background: const Color.fromARGB(255, 255, 255, 255),
 );
 
-final theme = ThemeData().copyWith(
+final theme = ThemeData(fontFamily: 'UbuntuCondensed').copyWith(
   useMaterial3: true,
   scaffoldBackgroundColor: colorScheme.background,
   colorScheme: colorScheme,
-  textTheme: GoogleFonts.ubuntuCondensedTextTheme().copyWith(
-    titleSmall: GoogleFonts.ubuntuCondensed(
-      fontWeight: FontWeight.bold,
-    ),
-    titleMedium: GoogleFonts.ubuntuCondensed(
-      fontWeight: FontWeight.bold,
-    ),
-    titleLarge: GoogleFonts.ubuntuCondensed(
-      fontWeight: FontWeight.bold,
-    ),
-  ),
 );
 
 class MyApp extends StatelessWidget {

@@ -36,7 +36,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   uuid: ^4.0.0
-  google_fonts: ^5.1.0
 
 dev_dependencies:
   flutter_test:
@@ -54,6 +53,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  fonts:
+    - family: UbuntuCondensed
+      fonts:
+        - asset: assets/fonts/UbuntuCondensed-Regular.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
