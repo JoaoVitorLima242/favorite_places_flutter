@@ -1,3 +1,4 @@
+import 'package:favorite_places/features/add_place/add_place_screen.dart';
 import 'package:favorite_places/features/places_list/widgets/places_list.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,11 @@ class PlacesListScreen extends StatefulWidget {
 }
 
 class _PlacesListScreen extends State<PlacesListScreen> {
+  void _onAddButtonPress() {
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (ctx) => const AddPlaceScreen()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +26,7 @@ class _PlacesListScreen extends State<PlacesListScreen> {
         ),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: _onAddButtonPress,
               icon: const Icon(
                 Icons.add,
               ))
