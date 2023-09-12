@@ -1,9 +1,9 @@
-import 'package:favorite_places/features/places_list/places_list_screen.dart';
-
 import 'package:flutter/material.dart';
+import 'package:favorite_places/features/places_list/places_list_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 final colorScheme = ColorScheme.fromSeed(
