@@ -54,8 +54,19 @@ class _AddPlaceForm extends ConsumerState<AddPlaceForm> {
           const SizedBox(height: 16),
           ElevatedButton.icon(
             onPressed: _onAddPlace,
-            icon: const Icon(Icons.add),
-            label: const Text('Add place'),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Theme.of(context).colorScheme.primary,
+            ),
+            icon: Icon(
+              Icons.add,
+              color: Theme.of(context).colorScheme.onSecondary,
+            ),
+            label: Text(
+              'Add place',
+              style: TextStyle(
+                  color: Theme.of(context).colorScheme.onSecondary,
+                  fontWeight: FontWeight.w700),
+            ),
           )
         ],
       ),

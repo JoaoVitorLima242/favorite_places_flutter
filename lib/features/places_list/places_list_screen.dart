@@ -9,8 +9,11 @@ class PlacesListScreen extends ConsumerWidget {
   const PlacesListScreen({super.key});
 
   void _onAddButtonPress(BuildContext context) {
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (ctx) => const AddPlaceScreen()));
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (ctx) => const AddPlaceScreen(),
+      ),
+    );
   }
 
   @override
