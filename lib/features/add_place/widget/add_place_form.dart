@@ -1,3 +1,4 @@
+import 'package:favorite_places/features/add_place/widget/image_input.dart';
 import 'package:favorite_places/models/place.dart';
 import 'package:favorite_places/providers/user_places.dart';
 import 'package:flutter/material.dart';
@@ -51,6 +52,8 @@ class _AddPlaceForm extends ConsumerState<AddPlaceForm> {
             ),
             controller: _titleController,
           ),
+          const SizedBox(height: 16),
+          const ImageInput(),
           const SizedBox(height: 16),
           ElevatedButton.icon(
             onPressed: _onAddPlace,
